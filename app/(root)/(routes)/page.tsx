@@ -13,11 +13,8 @@ const SetupPage = () => {
         }
     }, [isOpen, onOpen])
 
-    return (
-        <div>
-            Root Page
-        </div>
-    )
+    return null;
+
 
 }
 
