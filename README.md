@@ -35,3 +35,6 @@ the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=
 from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+![image](https://github.com/lptrk/admin-cms/assets/96191959/7c85d013-28c7-44b8-9d99-f710644921ab)
