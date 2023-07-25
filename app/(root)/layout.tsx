@@ -28,8 +28,8 @@ export default async function SetupLayout({
     }
 
     return (
-        <>
+        <div className={'flex justify-center items-center'}>
             {children}
-        </>
+        </div>
     )
 }
