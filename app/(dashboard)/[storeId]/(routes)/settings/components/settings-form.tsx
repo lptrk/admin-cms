@@ -16,7 +16,7 @@ import axios from "axios";
 import {useParams, useRouter} from "next/navigation";
 import {AlertModal} from "@/components/modals/alert-modal";
 import {ApiAlert} from "@/components/ui/api-alert";
-import {useOrigin} from "@/hooks/use-porigin";
+import {useOrigin} from "@/hooks/use-origin";
 
 interface SettingsFormProps {
     initialData: Store
