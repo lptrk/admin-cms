@@ -3,6 +3,7 @@
 import {cn} from "@/lib/utils";
 import {useParams, usePathname} from "next/navigation";
 import Link from "next/link";
+import React from "react";
 
 export function MainNav({
                             className,
@@ -17,11 +18,15 @@ export function MainNav({
             href: `/${params.storeId}`,
             label: 'Overview',
             active: pathname === `/${params.storeId}`
-        },{
+        }, {
             href: `/${params.storeId}/billboards`,
             label: 'Billboards',
             active: pathname === `/${params.storeId}/billboards`
-        },{
+        }, {
+            href: `/${params.storeId}/categories`,
+            label: 'Categories',
+            active: pathname === `/${params.storeId}/categories`
+        }, {
             href: `/${params.storeId}/settings`,
             label: 'Settings',
             active: pathname === `/${params.storeId}/settings`
@@ -35,9 +40,9 @@ export function MainNav({
                     key={route.href}
                     href={route.href}
                     className={cn(
-                    'text-sm font=medium transition-colors hover:text-primary',
-                        route.active? "text-black dark:text-white" : 'text-muted-foreground'
-                )}>
+                        'text-sm font=medium transition-colors hover:text-primary',
+                        route.active ? "text-black dark:text-white" : 'text-muted-foreground'
+                    )}>
                     {route.label}
                 </Link>
             ))}
