@@ -59,7 +59,7 @@ export const CategoryForm: React.FC<CategoryFormProps> = ({
             if (initialData) {
                 await axios.patch(`/api/${params.storeId}/categories/${params.categoryId}`, data);
             } else {
-                await axios.post(`/api/${params.storeId}/categories`, data);
+                await axios.post(`/api/${params.storeId}/categories/`, data);
             }
             router.refresh();
             router.push(`/${params.storeId}/categories`);
